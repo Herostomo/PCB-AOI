@@ -1,0 +1,58 @@
+{
+    "FP32": {
+        "model": "FP32",
+        "model_path": "/content/best (1).pt",
+        "precision": 0.9819107938761746,
+        "recall": 0.9908186464705088,
+        "f1_score": 0.9863446084853882,
+        "mAP50": 0.9905035268560324,
+        "mAP50-95": 0.6309787314403518,
+        "model_size_MB": 49.627580642700195,
+        "image_size": 640,
+        "batch_size": 1,
+        "device": "cpu",
+        "evaluation_split": "val"
+    },
+    "PTQ_INT8": {
+        "model": "PTQ INT8",
+        "model_path": "/content/best (1)_int8.onnx",
+        "precision": 0.9746796230979187,
+        "recall": 0.9874250883500956,
+        "f1_score": 0.9810109596446983,
+        "mAP50": 0.9821956399198162,
+        "mAP50-95": 0.5833247288025366,
+        "model_size_MB": 25.10415267944336,
+        "image_size": 640,
+        "batch_size": 1,
+        "device": "cpu",
+        "evaluation_split": "val"
+    },
+    "QAT": {
+        "model": "QAT",
+        "model_path": "/content/qat_output/yolov8m_qat/weights/QAT_best.pt",
+        "precision": 0.979603649993498,
+        "recall": 0.9911532878128221,
+        "f1_score": 0.9853446255277547,
+        "mAP50": 0.9904006475894639,
+        "mAP50-95": 0.6249086672988985,
+        "model_size_MB": 49.92694568634033,
+        "image_size": 640,
+        "batch_size": 1,
+        "device": "cpu",
+        "evaluation_split": "val"
+    },
+    "QAT_FIQ": {
+        "model": "QAT-FIQ",
+        "model_path": "/content/qat_output/yolov8m_qat/weights/best_qat_fiq_packed.onnx",
+        "precision": 0.9792056684039356,
+        "recall": 0.9856523846335122,
+        "f1_score": 0.9824184506529304,
+        "mAP50": 0.9890340789043162,
+        "mAP50-95": 0.6228709874866026,
+        "model_size_MB": 25.145708084106445,
+        "image_size": 640,
+        "batch_size": 1,
+        "device": "cpu",
+        "evaluation_split": "val"
+    }
+}
